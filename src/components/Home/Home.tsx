@@ -1,4 +1,5 @@
 import { BoxingGloveIcon } from "@phosphor-icons/react/dist/ssr/BoxingGlove";
+import { Button } from "../Button";
 
 export function Home() {
   return (
@@ -22,18 +23,12 @@ export function Home() {
         </p>
       </div>
       <div className="flex w-full flex-col gap-2">
-        <button
-          type="button"
-          className="w-full h-[48px] bg-transparent border border-white border-solid rounded-full"
-        >
-          <a href="/login">Login</a>
-        </button>
-        <button
-          type="button"
-          className="w-full h-[48px] bg-transparent border border-white border-solid rounded-full"
-        >
-          <a href="/cadastro">Cadastrar</a>
-        </button>
+        <Button href="/login" variant="outline">
+          Login
+        </Button>
+        <Button href="/cadastro" variant="outline">
+          Cadastrar
+        </Button>
       </div>
       <div>
         <p className="text-center text-sm">
