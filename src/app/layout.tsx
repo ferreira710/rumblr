@@ -48,7 +48,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <main className="min-h-screen bg-gray-100">{children}</main>
+        <main className="min-h-screen bg-gradient-to-tr from-stone-900 to-stone-700 text-white">
+          {children}
+        </main>
       </body>
     </html>
   );
